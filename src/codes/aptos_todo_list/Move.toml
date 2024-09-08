@@ -4,6 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
+todo_list_addr = "0xcb3303e6b96a1a666347bd06e27d24cc0cb09e204fedb6223a7bc9091dc49022"
 
 [dev-addresses]
 
