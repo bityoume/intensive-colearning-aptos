@@ -3,3 +3,4 @@ book
 build
 .env
 .aptos/
+node_modules
