@@ -128,3 +128,9 @@ VITE_MODULE_ADDRESS=0x3bd29c1df0312353e7cc1598d019c0716bee9dc10be949f8182856468c
 ```bash
 $ npm run dev
 ```
+
+## 页面交互
+
+![image-20240910193200677](images/image-20240910193200677.png)
+
+![image-20240910193214946](images/image-20240910193214946.png)
