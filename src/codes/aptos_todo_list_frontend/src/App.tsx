@@ -40,7 +40,7 @@ function App() {
     try {
       const todoListResource = await aptos.getAccountResource({
         accountAddress: account?.address,
-        resourceType: `${moduleAddress}::todolist::TodoList`,
+        resourceType: `${moduleAddress}::todo_list::TodoList`,
       });
       setAccountHasList(true);
       // tasks table handle
@@ -53,7 +53,7 @@ function App() {
       while (counter <= taskCounter) {
         const tableItem = {
           key_type: "u64",
-          value_type: `${moduleAddress}::todolist::Task`,
+          value_type: `${moduleAddress}::todo_list::Todo`,
           key: `${counter}`,
         };
         const task = await aptos.getTableItem<Task>({
@@ -76,7 +76,7 @@ function App() {
 
     const transaction: InputTransactionData = {
       data: {
-        function: `${moduleAddress}::todolist::create_list`,
+        function: `${moduleAddress}::todo_list::create_todo_list`,
         functionArguments: [],
       },
     };
@@ -100,7 +100,7 @@ function App() {
 
     const transaction: InputTransactionData = {
       data: {
-        function: `${moduleAddress}::todolist::create_task`,
+        function: `${moduleAddress}::todo_list::create_todo`,
         functionArguments: [newTask],
       },
     };
@@ -149,7 +149,7 @@ function App() {
 
     const transaction: InputTransactionData = {
       data: {
-        function: `${moduleAddress}::todolist::complete_task`,
+        function: `${moduleAddress}::todo_list::complete_todo`,
         functionArguments: [taskId],
       },
     };
@@ -189,7 +189,7 @@ function App() {
       <Layout>
         <Row align="middle">
           <Col span={10} offset={2}>
-            <h1>Our todolist</h1>
+            <h1>Bityoume todolist</h1>
           </Col>
           <Col span={12} style={{ textAlign: "right", paddingRight: "200px" }}>
             <WalletSelector />
@@ -205,7 +205,11 @@ function App() {
                 block
                 onClick={addNewList}
                 type="primary"
-                style={{ height: "40px", backgroundColor: "#3f67ff" }}
+                style={{
+                  height: "40px",
+                  backgroundColor: "#3f67ff",
+                  color: "white",
+                }}
               >
                 Add new list
               </Button>
