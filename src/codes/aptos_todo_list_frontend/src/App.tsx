@@ -190,7 +190,7 @@ function App() {
       <Layout>
         <Row align="middle">
           <Col span={10} offset={2}>
-            <h1>Our todolist</h1>
+            <h1>Bityoume todolist</h1>
           </Col>
           <Col span={12} style={{ textAlign: "right", paddingRight: "200px" }}>
             <WalletSelector />

@@ -5,4 +5,5 @@
 - [TypeScript SDK Quickstart](./ts_sdk_quickstart.md)
 - [Aptos DApp 开发入门](./hello_aptos_dapp.md)
 - [官方 Todolist 前端交互体验](./todolist_frontend.md)
+- [TypeScript SDK 基本使用](./ts_sdk_basic_usage.md)
 - [配置开发环境](./配置开发环境.md)
