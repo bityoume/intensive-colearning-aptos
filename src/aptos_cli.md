@@ -204,7 +204,7 @@ Transaction submitted: https://explorer.aptoslabs.com/txn/0x2492804e7610ac926014
 
 ### list
 
-````bash
+```bash
 List resources, modules, or balance owned by an address
 
 Usage: aptos account list [OPTIONS]
@@ -227,6 +227,7 @@ Options:
 ```
 
 #### 领水
+
 ```bash
 $ aptos account fund-with-faucet --account default
 {
@@ -235,6 +236,7 @@ $ aptos account fund-with-faucet --account default
 ```
 
 #### 查看账户的余额和转账事件
+
 ```bash
 $ aptos account list --query balance --account default
 {
@@ -338,8 +340,8 @@ $  aptos account list --query resources --account default
 }
 ```
 
-
 #### 列出账户模块
+
 ```bash
 $ aptos account list --query modules
 {
@@ -539,6 +541,7 @@ $ aptos account list --query modules
 ```
 
 #### 转账
+
 ```bash
 $ aptos account balance --account default
 {
@@ -643,4 +646,7 @@ $ aptos account balance --account jason
 # 参考资料
 
 https://gushi10546.gitbook.io/aptos-kai-fa-zhe-wen-dang/aptos-cli/shi-yong-aptos-cli
-````
+
+```
+
+```
