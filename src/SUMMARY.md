@@ -8,3 +8,4 @@
 - [TypeScript SDK 基本使用](./ts_sdk_basic_usage.md)
 - [Aptos CLI](./aptos_cli.md)
 - [配置开发环境](./配置开发环境.md)
+- [示例学习：transfer_coin.ts](./eg_transfer_coin_ts.md)
