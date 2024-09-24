@@ -1,5 +1,9 @@
 # 示例学习：transfer_coin.ts
 
+## 示例说明
+
+本示例会创建两个账号（Alice 和 Bob），并向 Alice 账号领水，然后 Alice 向 Bob 进行转账。
+
 ## 示例来源
 
 https://github.com/aptos-labs/aptos-ts-sdk/blob/main/examples/typescript/transfer_coin.ts
