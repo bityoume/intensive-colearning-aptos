@@ -136,3 +136,19 @@ if (newBobBalance !== TRANSFER_AMOUNT + BOB_INITIAL_BALANCE)
 if (newAliceBalance >= ALICE_INITIAL_BALANCE - TRANSFER_AMOUNT)
   throw new Error("Alice's balance after transfer is incorrect");
 ```
+
+### (6) 查询账户余额方法封装
+
+```tsx
+const balance = async (aptos: Aptos, name: string, address: AccountAddress) => {
+  type Coin = { coin: { value: string } };
+  const resource = await aptos.getAccountResource<Coin>({
+    accountAddress: address,
+    resourceType: COIN_STORE,
+  });
+  const amount = Number(resource.coin.value);
+
+  console.log(`${name}'s balance is: ${amount}`);
+  return amount;
+};
+```
